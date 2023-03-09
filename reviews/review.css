@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root{
+  --blue-color:rgb(119, 173, 217);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "poppins";
+}
+
+.container{
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    border-bottom: 5px solid var(--blue-color);
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    /* word-spacing: 0.8rem; */
+    letter-spacing: 0.2rem;
+    /* background-color: bisque; */
+}
+img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    box-shadow: 5px -2px var(--blue-color);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    gap: 0.7rem;
+    border: none;
+    box-shadow: 0 0 10px rgb(209, 209, 209);
+    border-radius: 0.5rem;
+    padding: 2rem 2rem;
+}
+.name{
+    font-weight: bold;
+}
+.job{
+    color: var(--blue-color);
+}
+.details{
+    color: gray;
+}
+.navigationBtn{
+    gap: 2rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.left,.right{
+    color: var(--blue-color);
+    cursor: pointer;
+}
+.left:hover,.right:hover{
+    color: rgb(70, 70, 104);
+}
+.random{
+    border: 2px solid var(--blue-color);
+    padding: 5px 20px;
+    border-radius: 0.3rem;
+    color: var(--blue-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+.random:hover{
+    color: white;
+    transition: 0.4s ease;
+    background-color: var(--blue-color);
+    border: none;
+}
